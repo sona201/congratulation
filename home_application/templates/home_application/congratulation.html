@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk_pack.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/bk/js/bk.js"></script>
+    <!-- 数据埋点统计 -->
+    <script src="http://magicbox.bk.tencent.com/static_api/analysis.js"></script>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]><script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/html5shiv.min.js"></script><script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/respond.min.js"></script><![endif]-->
+</head>
+
+<body class="bg-white" data-bg-color="bg-white">
+    <div class="king-page-box">
+        <div class="king-container clearfix">
+            <nav role="navigation" class="navbar navbar-default king-horizontal-nav2    f14 ">
+                <div class="container " style="width:100%;overflow:hidden;">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed navbar-toggle-sm" data-toggle="collapse" data-target="#king-horizontal-nav2-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="javascript:;">
+                            <img src="https://magicbox.bk.tencent.com/static_api/v3/bk/images/logo3.png" alt="" class="logo"> </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-responsive-collapse" id="king-horizontal-nav2-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="king-navbar-active"><a href="javascript:void(0);">首页</a></li>
+                            <li><a href="javascript:void(0);">数据统计</a></li>
+                            <li><a href="javascript:void(0);">单据统计</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="javascript:;">
+                                    <span>管理者</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid mb0 ">
+                <div class="row">
+                    <div class="col-md-2">
+                        <section class="panel mb0 panel-box">
+                            <div class="panel-top bg-primary">
+                                <div class="text-center">
+                                    <h3>admin</h3>
+                                    <p>超级管理员</p>
+                                </div>
+                                <div class="divider divider-lg"></div>
+                                <div class="divider divider-lg"></div>
+                            </div>
+                            <div class="panel-img bg-primary">
+                                <img alt="" src="https://magicbox.bk.tencent.com/static_api/v3/components/widget4/images/avatar.png" class="img-circle"> </div>
+                            <div class="list-justified-container">
+                                <ul class="list-justified text-center">
+                                    <li>
+                                        <p class="f24">679</p>
+                                        <p class="text-muted">粉丝</p>
+                                    </li>
+                                    <li>
+                                        <p class="f24">575</p>
+                                        <p class="text-muted">微博</p>
+                                    </li>
+                                    <li>
+                                        <p class="f24">23</p>
+                                        <p class="text-muted">关注</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="panel mb0 panel-profile">
+                            <div class="panel-heading bg-danger clearfix">
+                                <a href="" class="pull-left profile">
+                                    <img alt="" src="https://magicbox.bk.tencent.com/static_api/v3/components/widget4/images/avatar.png" class="img-circle img80_80"> </a>
+                                <h3>admin</h3>
+                                <p>超级管理员</p>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <span class="badge">14</span> <i class="fa fa-envelope-o"></i> 新增邮件 </li>
+                                <li class="list-group-item">
+                                    <span class="badge badge-warning">2</span> <i class="fa fa-comments-o"></i> 未读消息 </li>
+                                <li class="list-group-item">
+                                    <span class="badge badge-info">1</span> <i class="fa fa-heart-o"></i> 错误消息 </li>
+                                <li class="list-group-item">
+                                    <span class="badge badge-success">3</span> <i class="fa fa-folder-open-o"></i> 告警消息 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mb0 ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="king-widget2  m0">
+                            <div class="king-widget2-content p30">
+                                <div class="row no-space">
+                                    <div class="col-sm-6">
+                                        <div class="king-counter king-counter-lg">
+                                            <span class="king-counter-number">286</span>
+                                            <div class="king-counter-label text-uppercase">Online Players</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="king-counter king-counter-lg">
+                                            <span class="king-counter-number">286</span>
+                                            <div class="king-counter-label text-uppercase">Online Players</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <!-- 设置面板End -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel mb0 panel-box bordered">
+                            <div class="panel-left panel-item bg-reverse">
+                                <p class="f36">59º</p>
+                                <p class="text-muted">多云</p>
+                            </div>
+                            <div class="panel-right panel-item bg-success"> <i class="fa fa-cloud text-huge"></i> </div>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <!-- 设置面板End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
